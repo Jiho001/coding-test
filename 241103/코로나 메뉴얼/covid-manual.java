@@ -6,7 +6,7 @@ public class Main {
         for(int i=0;i<3;i++){
             String symptom = sc.next();
             int temp = sc.nextInt();
-            if (symptom == "Y" && symptom >= 37)
+            if (symptom == "Y" && temp >= 37)
                 emer++;
         }
         if (emer >= 2) 
