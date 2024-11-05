@@ -1,5 +1,7 @@
 def solution(x):
-    if '.' in x: sep_point_list_len = list(map(len, x.split('.')))
+    if '.' in x: 
+        if 'X' in x: sep_point_list_len = list(map(len, x.split('.')))
+        else: return -1
     else: sep_point_list_len = [len(x)]
     return_list = []
     for l in sep_point_list_len:
